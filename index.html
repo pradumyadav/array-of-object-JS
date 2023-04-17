@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>array of object.</h2>
+    <h5>
+        Q-1= "let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+         {name: 'Baba', id: 101, marks : 23 },
+         {name: 'yaga', id: 200, marks : 45 },
+         {name: 'Wick', id: 115, marks : 75 } ] "
+
+    </h5>
+<p>We are interested in retrieving only the students' names; all the names should be in caps.<br>
+['JOHN', 'BABA', 'YAGA', 'WICK']</p>
+
+    <p>let ans=[];</p>
+<p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>ans.push(studentRecords[i].name.toUpperCase());</p>
+<p>}</p>
+<p>console.log(ans);
+</p>
+<h5>Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.<br>[{name: 'John', id: 123, marks: 98 },{name: 'Wick', id: 115, marks: 75 }]</h5>
+<P>let ans=[];</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>if(studentRecords[i].marks>50){</p>
+    <p>ans.push(studentRecords[i]);</p>
+<p>}</p>
+<p>}</p>
+<p>console.log(ans);</P>
+
+<h5>Retrieve the details of students who scored more than 50 marks and have IDs greater than 120.</h5>
+<p>let ans=[];</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>if(studentRecords[i].marks>50 && studentRecords[i].id>120){</p>
+    <p>ans.push(studentRecords[i]);</p>
+<p>}</p>
+<p>}</p>
+<p>console.log(ans);</p>
+<h5>Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</h5>
+<p>let ans=0;</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>ans+=studentRecords[i].marks;</p>
+<p>};</p>
+<p>console.log(ans);</p>
+<h5>This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</h5>
+<p> let ans=[];</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>if(studentRecords[i].marks>50){</p>
+<p>ans.push(studentRecords[i].name);</p>
+<p>}</p>
+<p>}</p>
+<p>console.log(ans);</p>
+<h5>This time we are required to print the sum of marks of the students with id > 120.</h5>
+<p> let ans=0;</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+<p>if(studentRecords[i].id>120){</p>
+<p>ans+=studentRecords[i].marks;</p>
+<p>}</p>
+<p>}</p>
+<p>console.log(ans); </p>
+<h5>This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</h5>
+<p>  let ans=0;</p>
+    <p>for(let i=0;i< studentRecords.length;i++){</p>
+    <p>if(studentRecords[i].marks< 50){</p>
+<p>studentRecords[i].marks+=15;</p>
+<p>}</p>
+<p>if(studentRecords[i].marks>50){</p>
+    <p>ans+=studentRecords[i].marks;</p>
+<p>}</p>
+<p>}</p>
+<p>console.log(ans);</p>
+<h5>Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects.</h5>
+<p>let students = [ object1={name: 'RAHAMAN', rollno: 1, class: 1 },</p>
+    <p> object2= {name: 'SHAIK', rollno: 10, class: 2},</p>
+        <p>object3= {name: 'NIKKI', rollno: 20, class: 3},</p>
+            <p>   object4= {name: 'AMMULU', rollno: 30, class: 4},</p>
+                <p>object5= {name: 'RAKSHASHI', rollno: 40, class: 5},</p>
+                    <p> object6= {name: 'BABY', rollno: 50, class: 6}]  </p>  
+                        <p> console.log(students);</p>
+</body>
+</html>
